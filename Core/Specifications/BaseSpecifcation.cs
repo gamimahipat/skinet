@@ -4,7 +4,7 @@ namespace Core.Specifications
 {
    public class BaseSpecifcation<T> : ISpecification<T>
     {
-        public BaseSpecifcation()
+         public BaseSpecifcation()
         {
         }
 

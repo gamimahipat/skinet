@@ -24,6 +24,15 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+//change
+// builder.Services.AddCors(opt =>
+//            {
+//                opt.AddPolicy("CorsPolicy", policy =>
+//                {
+//                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+//                });
+//            });
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -37,6 +46,7 @@ app.UseHttpsRedirection();
 
 //change
 app.UseStaticFiles();
+//app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
